@@ -1,57 +1,69 @@
-<!-- Esta línea es importante porque declaramos el tipo de lenguaje que vamos a usar (HTML) -->
+<!-- Esta lÃ­nea es importante porque declaramos el tipo de lenguaje que vamos a usar (HTML) -->
 <!doctype html>
 <html>
 	<head>
-	<!-- Esta línea es para que funcionen las tildes, porque en el charset le decimos el estándar de teclado que estamos usando, en este caso ISO-8859-1 que es para el teclado español -->
+	<!-- Esta lÃ­nea es para que funcionen las tildes, porque en el charset le decimos el estÃ¡ndar de teclado que estamos usando, en este caso ISO-8859-1 que es para el teclado espaÃ±ol -->
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
 		<title>CINEADICT@S: REBECCA</title>
-		<!-- Aquí definimos los estilos para no tener que escribir luego tantas veces -->
+		<!-- AquÃ­ definimos los estilos para no tener que escribir luego tantas veces -->
 		<style>
-			/* Aquí definimos el estilo de la etiqueta <body></body>, definimos el tamaño de la letra a 14px, y el color de fondo a #F5A9F2 */
+			/* AquÃ­ definimos el estilo de la etiqueta <body></body>, definimos el tamaÃ±o de la letra a 14px, y el color de fondo a #F5A9F2 */
 			body { font-size: 14px; background-color: #F5A9F2 }
-			/* Aquí definimos el estilo tanto de la etiqueta <h1></h1> como de la `clase` .center (las clases se aplican a cualquier elemento como por ejemplo: <p class="center"> </p> y esa etiqueta tendrá ese estilo. En este caso usamos `text-align` para alinear el texto al centro */
+			/* AquÃ­ definimos el estilo tanto de la etiqueta <h1></h1> como de la `clase` .center (las clases se aplican a cualquier elemento como por ejemplo: <p class="center"> </p> y esa etiqueta tendrÃ¡ ese estilo. En este caso usamos `text-align` para alinear el texto al centro */
 			h1, .center { text-align: center }
+			/* AquÃ­ definimos que las listas (etiqueta <ul></ul>) no tienen que tener espacio interno (padding) para que no nos cree "mÃ¡rgenes internos", por lo que definimos el padding a 0. Esto normalmente no hace falta pero se hace porque cada navegador interpreta el cÃ³digo de una manera, y asÃ­ nos aseguramos de que siempre se ve bien */
 			ul { padding: 0; }
+			/* AquÃ­ decimos que los elementos de una lista (etiqueta <li></li>) no tienen que tener puntos, ni rayas, porque en nuestro diseÃ±o no los queremos asÃ­ que ponemos el list-style (estilo de lista) a none, osea, a ninguno */
 			li { list-style: none }
 		</style>
 	</head>
 	<body>
 		<h1>WELCOME!!</h1>
-		<p class="center">En esta web encontrarás todo sobre "Rebecca", el éxito cinematográfico de 1940, del director británico Alfred Hitchcock.</p>
-		<marquee> 
-			<p>Segunda señora de Winter y Señora Danvers</p>
+		<!-- AquÃ­ aplicamos la clase `.center` y el texto queda centrado -->
+		<p class="center">En esta web encontrarÃ¡s todo sobre "Rebecca", el Ã©xito cinematogrÃ¡fico de 1940, del director britÃ¡nico Alfred Hitchcock.</p>
+		<marquee>
+			<p>Segunda seÃ±ora de Winter y SeÃ±ora Danvers</p>
 		</marquee>
+		<!-- <p> Significa 'pÃ¡rrafo', <div> es una etiqueta genÃ©rica que se usa cuando no es un pÃ¡rrafo, ni una lista, ni otra cosa que tenga etiqueta propia por eso te cambiÃ© el <div> por un <p> -->
 		<p>
-			Al poco tiempo de perder a su esposa Rebeca, el aristócrata inglés Maxim De Winter conoce en Montecarlo a una joven humilde, 
-			dama de compañía de una señora americana. De Winter y la joven se casan y se van a vivir a Inglaterra, a la mansión de Manderley, 
-			residencia habitual de Maxim. La nueva señora De Winter se da cuenta muy pronto de que todo allí está impregnado del recuerdo de Rebeca.
+			Al poco tiempo de perder a su esposa Rebeca, el aristÃ³crata inglÃ©s Maxim De Winter conoce en Montecarlo a una joven humilde,
+			dama de compaÃ±Ã­a de una seÃ±ora americana. De Winter y la joven se casan y se van a vivir a Inglaterra, a la mansiÃ³n de Manderley,
+			residencia habitual de Maxim. La nueva seÃ±ora De Winter se da cuenta muy pronto de que todo allÃ­ estÃ¡ impregnado del recuerdo de Rebeca.
 		</p>
 
+		<!-- AquÃ­ tenemos una etiqueta <div> para agrupar mÃ¡s que nada, porque son bloques distintos en nuestro diseÃ±o -->
 		<div class="center">
+		<img src="./rebecca.jpg">
+		<!-- Reparto es un tÃ­tulo -->
 			<h2>Reparto:</h2>
+			<!-- Definimos una lista -->
 			<ul>
+			<!-- Cada elemento de la lista... -->
 				<li>Laurence Olivier: Maximilian De Winter<li>
-				<li>Joan Fontaine: Segunda señora de Winter<li>
+				<li>Joan Fontaine: Segunda seÃ±ora de Winter<li>
 				<li>George Sanders: Jack Favell<li>
-				<li>Judith Anderson: Señora Danvers<li>
+				<li>Judith Anderson: SeÃ±ora Danvers<li>
 				<li>Nigel Bruce:Mayor Giles Lacy<li>
 				<li>Reginald Denny: Frank Crawley<li>
 				<li>C.Aubrey Smith: Cnel.Julyan<li>
 				<li>Gladys Cooper: Beatrice Lacy<li>
 			</ul>
-		</div>	
+		</div>
 
+		<!-- Repetimos la operaciÃ³n del bloque anterior, creando un contenedor <div> con una lista de elementos. -->
+		<!-- Usamos una lista porque estamos listando cosas, es una cuestiÃ³n semÃ¡ntica (de significado), pero a la hora de hacer el cÃ³digo, podrÃ­amos usar cualquier etiqueta, como hacÃ­as antes con <p>, y funcionarÃ­a -->
 		<div>
 			<ul>
-				<li>Género:Drama. Intriga.</li>
+				<li>GÃ©nero:Drama. Intriga.</li>
 				<li>Diretor: Alfred Hitchcock.</li>
-				<li>Guión: Robert E. Sherwood, Joan Harrison (Novela: Daphne du Maurier).</li>
-				<li>Música: Franz Waxman.</li>
-				<li>Fotografía: George Barnes (B&W).</li>
+				<li>GuiÃ³n: Robert E. Sherwood, Joan Harrison (Novela: Daphne du Maurier).</li>
+				<li>MÃºsica: Franz Waxman.</li>
+				<li>FotografÃ­a: George Barnes (B&W).</li>
 				<li>Productora: Selznick International Pictures.</li>
-				<li>Premios: 1940:2 Oscars: Mejor película, fotografía. 11 nominaciones.</li>
+				<li>Premios: 1940:2 Oscars: Mejor pelÃ­cula, fotografÃ­a. 11 nominaciones.</li>
 			</ul>
-		</div>		
+		</div>
+		<!-- VÃ­deo -->
 		<iframe width="640" height="360" src="https://www.youtube.com/embed/t3YJcW2UQiw" frameborder="0" allowfullscreen></iframe>
 	</body>
-</html> 
+</html>
